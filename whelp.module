@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains whelp.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function whelp_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the whelp module.
+    case 'help.page.whelp':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('JN test generate module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function whelp_theme() {
+  return [
+    'whelp' => [
+      'render element' => 'children',
+    ],
+  ];
+}

@@ -1,0 +1,13 @@
+{
+    "name": "whelp",
+    "type": "drupal-module",
+    "description": "JN test generate module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/whelp",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/whelp",
+        "source": "http://cgit.drupalcode.org/whelp",
+    },
+}

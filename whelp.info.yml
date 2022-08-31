@@ -1,0 +1,5 @@
+name: 'whelp'
+type: module
+description: 'JN test generate module'
+core: 8.x
+package: 'Custom'
